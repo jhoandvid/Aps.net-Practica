@@ -18,6 +18,7 @@ using Back_end.Controllers;
 using Back_end.flitros;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 
 namespace Back_end
 {
@@ -35,7 +36,17 @@ namespace Back_end
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
+            services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+            services.AddCors(options =>
+            {
+                var frontendURL = Configuration.GetValue<String>("frontend_url");
+                options.AddDefaultPolicy(builder =>
+                {
 
+                    builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader().WithExposedHeaders(new string[]{"cantidadTotalRegistros"});
+                });
+            });
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
             services.AddControllers(options =>
             {
@@ -64,6 +75,8 @@ namespace Back_end
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthentication();
             
