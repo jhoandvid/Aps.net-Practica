@@ -19,7 +19,7 @@
 
             set
             {
-                RecordsPorPagina=(value > cantidadMaximaRecordsPorPagina)?cantidadMaximaRecordsPorPagina:value;
+                recordsPorPagina=(value > cantidadMaximaRecordsPorPagina)?cantidadMaximaRecordsPorPagina:value;
             }
         }
 

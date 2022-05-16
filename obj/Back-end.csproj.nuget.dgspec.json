@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CURSOS\\Trabajo\\Herramienta\\back-end\\back-end\\Back-end.csproj": {}
+    "D:\\CURSOS\\Trabajo\\Herramienta\\Back-end\\Back-end\\Back-end.csproj": {}
   },
   "projects": {
-    "D:\\CURSOS\\Trabajo\\Herramienta\\back-end\\back-end\\Back-end.csproj": {
+    "D:\\CURSOS\\Trabajo\\Herramienta\\Back-end\\Back-end\\Back-end.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CURSOS\\Trabajo\\Herramienta\\back-end\\back-end\\Back-end.csproj",
+        "projectUniqueName": "D:\\CURSOS\\Trabajo\\Herramienta\\Back-end\\Back-end\\Back-end.csproj",
         "projectName": "Back-end",
-        "projectPath": "D:\\CURSOS\\Trabajo\\Herramienta\\back-end\\back-end\\Back-end.csproj",
+        "projectPath": "D:\\CURSOS\\Trabajo\\Herramienta\\Back-end\\Back-end\\Back-end.csproj",
         "packagesPath": "C:\\Users\\jhoan\\.nuget\\packages\\",
-        "outputPath": "D:\\CURSOS\\Trabajo\\Herramienta\\back-end\\back-end\\obj\\",
+        "outputPath": "D:\\CURSOS\\Trabajo\\Herramienta\\Back-end\\Back-end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jhoan\\AppData\\Roaming\\NuGet\\NuGet.Config",
